@@ -19,15 +19,17 @@ class PagarViewController: UIViewController {
     var totalPagar:Double = 0.00
     var tipoPago: Int = 1
     var codigoCupon: UITextField?
+
+    @IBAction func validarCuponButton(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
     
     @IBAction func hacerPedidoButton(_ sender: UIButton) {
         guard let detalleViewController = storyboard?.instantiateViewController(withIdentifier: "ReciboPagadoViewController") as? ReciboPagadoViewController else {return}
         detalleViewController.modalPresentationStyle = .fullScreen
         present(detalleViewController, animated: true)
 
-    }
-    
-    @IBAction func metodoPagoSegmentedControl(_ sender: UISegmentedControl) {
+
     }
     
     @IBAction func verProductosButton(_ sender: UIButton) {
@@ -37,8 +39,14 @@ class PagarViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         print(totalPagar)
+        let compraViewController = CompraViewController()
+        print(compraViewController)
         totalPagarLabel.text = "S/. \(String(totalPagar))"
     }
+    
+    @IBAction func metodoPagoSegmentedControl(_ sender: UISegmentedControl) {
+    }
+    
 }
 
 extension PagarViewController:UITableViewDataSource{
@@ -104,3 +112,4 @@ extension PagarViewController: CustomPagarTableViewCellDelegate {
         }
     }
 }
+

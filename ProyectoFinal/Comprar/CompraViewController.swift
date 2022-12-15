@@ -8,6 +8,27 @@
 import UIKit
 
 class CompraViewController: UIViewController{
+<<<<<<< HEAD
+=======
+    /*
+    var Lista = [
+        DescripcionCompra(
+            codigo: "",
+            titulo: "Pastel de Chocolate",
+            precio: 40.10,
+            imagen: "pastel-chocolate",
+            cantidad: 1
+        ),
+        DescripcionCompra(
+            codigo: "",
+            titulo: "Pastel de Fresa",
+            precio: 40.25,
+            imagen: "pastel-fresa",
+            cantidad: 2
+        )
+    ]
+    */
+>>>>>>> cead4b37e28d2a3516d2fad0e39fb1895d19caaf
     var listaPorComprar:[DescripcionCompra] = []
     var subTotalLabel:Double = 0.00
     
@@ -42,12 +63,20 @@ class CompraViewController: UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "mostrarPagar" {
             //if let pagarViewController = segue.destination as? mostrarPagar{ }
+<<<<<<< HEAD
             
             let pagarViewController = segue.destination as? PagarViewController
             let listaCompra = listaPorComprar
             pagarViewController?.listaFinal.append(contentsOf: listaCompra)
             let valor = calcularTotal()
             pagarViewController?.totalPagar = valor
+=======
+            let listaCompra = listaPorComprar
+            let pagarViewController = PagarViewController()
+            pagarViewController.listaFinal.append(contentsOf: listaCompra)
+            let valor = calcularTotal()
+            pagarViewController.totalPagar = valor
+>>>>>>> cead4b37e28d2a3516d2fad0e39fb1895d19caaf
         }
     }
     

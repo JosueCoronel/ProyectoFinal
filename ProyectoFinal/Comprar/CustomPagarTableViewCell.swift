@@ -7,6 +7,7 @@
 
 import UIKit
 
+<<<<<<< HEAD
 protocol CustomPagarTableViewCellDelegate {
     func customPagarTableView(_ tableViewCell: CustomPagarTableViewCell, didValidate isValid: Bool, icon: UIImageView)
 }
@@ -30,3 +31,19 @@ class CustomPagarTableViewCell: UITableViewCell {
 
 }
 
+=======
+class CustomPagarTableViewCell: UITableViewCell {
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+
+}
+>>>>>>> cead4b37e28d2a3516d2fad0e39fb1895d19caaf
