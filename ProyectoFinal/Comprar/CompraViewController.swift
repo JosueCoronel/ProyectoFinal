@@ -16,10 +16,8 @@ class CompraViewController: UIViewController{
     
     
     @IBAction func comprarButton(_ sender: UIButton) {
-        
-        //present(pagarViewController, animated: true)
-        
     }
+    
     @IBAction func borrarTodoButton(_ sender: UIButton) {
         listaPorComprar = []
         pagarTotalLabel.text = "S/. \(subTotalLabel)"
@@ -41,8 +39,6 @@ class CompraViewController: UIViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "mostrarPagar" {
-            //if let pagarViewController = segue.destination as? mostrarPagar{ }
-            
             let pagarViewController = segue.destination as? PagarViewController
             let listaCompra = listaPorComprar
             pagarViewController?.listaFinal.append(contentsOf: listaCompra)

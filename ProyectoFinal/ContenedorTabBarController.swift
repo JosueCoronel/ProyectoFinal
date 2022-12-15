@@ -46,41 +46,45 @@ class ContenedorTabBarController: UITabBarController {
     
     var listaFavorito:[Descripcion] = []
     var listaCarrito:[DescripcionCompra] = []
-    /*
-    var listaCarrito = [
-        DescripcionCompra(
-            codigo: "",
-            titulo: "Pastel de Chocolate",
-            precio: 40.10,
-            imagen: "pastel-chocolate",
-            cantidad: 1
-        ),
-        DescripcionCompra(
-            codigo: "",
-            titulo: "Pastel de Fresa",
-            precio: 40.25,
-            imagen: "pastel-fresa",
-            cantidad: 2
-        )
-    ]
-    */
+    
     var listaCupones = [
         DescripcionCupones(
             codigoCupon: "NTTDATA01",
-            porcentDescuento: 0.10,
+            porcentDescuento: 10,
             imagenCupon: "cupon-10"
         ),
         DescripcionCupones(
             codigoCupon: "NTTDATA02",
-            porcentDescuento: 0.20,
+            porcentDescuento: 20,
             imagenCupon: "cupon-20"
         ),
         DescripcionCupones(
             codigoCupon: "NTTDATA03",
-            porcentDescuento: 0.30,
+            porcentDescuento: 30,
             imagenCupon: "cupon-30"
         ),
     ]
+    
+    var listaDireccionLocal = [
+    DescripcionLocal(
+        direccion: "Jr, Daniel Garces 404, San Juan de Miraflores",
+        ubicacionImagen: "ubicacion-local")
+    ]
+    
+    var listaRecibo = [
+        DescripcionRecibo(
+            codigoRecibo: 20501001,
+            cantidadProductos: 2,
+            costoProducto: 80.00,
+            precioFinal: 80.00,
+            ModoPago: "Efectivo",
+            codigoUser: "USER-NTTDATA01",
+            descuentoCupon: 0,
+            fechaCompra: "12/15/22, 2:42 p.m."
+        )
+    ]
+    
+    var listaReciboProducto: [DescripcionReciboProducto] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()

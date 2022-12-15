@@ -18,6 +18,7 @@
 		2F1661552935E0B30024B4AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1661532935E0B30024B4AB /* Main.storyboard */; };
 		2F1661572935E0B40024B4AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1661562935E0B40024B4AB /* Assets.xcassets */; };
 		2F16615A2935E0B40024B4AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1661582935E0B40024B4AB /* LaunchScreen.storyboard */; };
+		2F2E11CC294B958500A83391 /* MisProductosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E11CB294B958500A83391 /* MisProductosViewController.swift */; };
 		2F583BF329473E72000F9BE0 /* CustomPagarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F583BF229473E72000F9BE0 /* CustomPagarTableViewCell.swift */; };
 		2FB7DB97293FBA8800DCBBA2 /* CompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7DB96293FBA8800DCBBA2 /* CompraViewController.swift */; };
 		2FB7DB99293FBAA000DCBBA2 /* FavoritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7DB98293FBAA000DCBBA2 /* FavoritoViewController.swift */; };
@@ -42,6 +43,7 @@
 		2F1661562935E0B40024B4AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F1661592935E0B40024B4AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F16615B2935E0B40024B4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F2E11CB294B958500A83391 /* MisProductosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisProductosViewController.swift; sourceTree = "<group>"; };
 		2F583BF229473E72000F9BE0 /* CustomPagarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPagarTableViewCell.swift; sourceTree = "<group>"; };
 		2FB7DB96293FBA8800DCBBA2 /* CompraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraViewController.swift; sourceTree = "<group>"; };
 		2FB7DB98293FBAA000DCBBA2 /* FavoritoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritoViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				2F14069A2941C6A700CF2F4F /* PagarViewController.swift */,
 				2F583BF229473E72000F9BE0 /* CustomPagarTableViewCell.swift */,
 				2F0692032947727400E70DF2 /* ReciboPagadoViewController.swift */,
+				2F2E11CB294B958500A83391 /* MisProductosViewController.swift */,
 			);
 			path = Comprar;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				2F583BF329473E72000F9BE0 /* CustomPagarTableViewCell.swift in Sources */,
 				2F1406A02941E03300CF2F4F /* CustomInicioTableViewCell.swift in Sources */,
 				2F1661522935E0B30024B4AB /* ViewController.swift in Sources */,
+				2F2E11CC294B958500A83391 /* MisProductosViewController.swift in Sources */,
 				2F16614E2935E0B30024B4AB /* AppDelegate.swift in Sources */,
 				2F1661502935E0B30024B4AB /* SceneDelegate.swift in Sources */,
 				2FB7DB9B293FBAAD00DCBBA2 /* ConfiguracionViewController.swift in Sources */,
