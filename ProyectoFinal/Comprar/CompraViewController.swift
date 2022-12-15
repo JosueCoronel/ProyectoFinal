@@ -7,65 +7,70 @@
 
 import UIKit
 
-class CompraViewController: UIViewController,UITableViewDataSource{
-
-    var Lista = [
-        DescripcionCompra(
-            codigo: "",
-            titulo: "Pastel de Chocolate",
-            precio: 40.10,
-            imagen: "pastel-chocolate",
-            cantidad: 1
-        ),
-        DescripcionCompra(
-            codigo: "",
-            titulo: "Pastel de Fresa",
-            precio: 40.25,
-            imagen: "pastel-fresa",
-            cantidad: 2
-        )
-    ]
+class CompraViewController: UIViewController{
     var listaPorComprar:[DescripcionCompra] = []
+    var subTotalLabel:Double = 0.00
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var pagarTotalLabel: UILabel!
     
     
     @IBAction func comprarButton(_ sender: UIButton) {
-        let listaCompra = Lista
-        guard let pagarViewController = storyboard?.instantiateViewController(withIdentifier: "PagarViewController") as? PagarViewController else {
-            return
-        }
-        pagarViewController.listaFinal.append(contentsOf: listaCompra)
-        let valor = calcularTotal()
-        pagarViewController.totalPagar = valor
         
-        present(pagarViewController, animated: true)
+        //present(pagarViewController, animated: true)
+        
     }
     @IBAction func borrarTodoButton(_ sender: UIButton) {
-        Lista.removeAll()
-        pagarTotalLabel.text = "S/. \(String(0))"
+        listaPorComprar = []
+        pagarTotalLabel.text = "S/. \(subTotalLabel)"
         tableView.reloadData()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        pagarTotalLabel.text = "S/. \(subTotalLabel)"
+        let tabbar = tabBarController as! ContenedorTabBarController
+        listaPorComprar = tabbar.listaCarrito
+        tableView.reloadData()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        
+        let tabbar = tabBarController as! ContenedorTabBarController
+        tabbar.listaCarrito = listaPorComprar
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mostrarPagar" {
+            //if let pagarViewController = segue.destination as? mostrarPagar{ }
+            
+            let pagarViewController = segue.destination as? PagarViewController
+            let listaCompra = listaPorComprar
+            pagarViewController?.listaFinal.append(contentsOf: listaCompra)
+            let valor = calcularTotal()
+            pagarViewController?.totalPagar = valor
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        print(listaPorComprar)
     }
-    
+}
+
+extension CompraViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listaPorComprar.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let valor = calcularTotal()
-        pagarTotalLabel.text =  "S/. \(String(valor))"
+        pagarTotalLabel.text =  "S/. \(String(valor.redondear(numeroDeDecimales: 2)))"
         //let indice = indexPath.row
         if let cell = tableView.dequeueReusableCell(withIdentifier: "customCompra", for: indexPath) as? CustomComprarTableViewCell{
             let lista = listaPorComprar[indexPath.row]
             //cell.setup(lista: lista)
             cell.tituloLabel.text = lista.titulo
-            cell.pagarLabel.text = "S/. \(String(lista.precio))"
+            cell.pagarLabel.text = "S/. \(String(lista.precio.redondear(numeroDeDecimales: 2)))"
             cell.cantidadLabel.text = String(lista.cantidad)
             cell.fotoImageView.image = UIImage(named: lista.imagen)
             cell.indexCell = indexPath.row
@@ -80,20 +85,20 @@ class CompraViewController: UIViewController,UITableViewDataSource{
 
 extension CompraViewController: CustomComprarTableViewCellDelegate{
     func agregarProducto(cell: CustomComprarTableViewCell,index: Int) {
-        var cantidadResult = Lista[index].cantidad
+        var cantidadResult = listaPorComprar[index].cantidad
         cantidadResult = cantidadResult + 1
-        Lista[index].cantidad = cantidadResult
+        listaPorComprar[index].cantidad = cantidadResult
         let valor = calcularTotal()
         pagarTotalLabel.text =  "S/. \(String(valor))"
         tableView.reloadData()
     }
     
     func eliminarProducto(cell: CustomComprarTableViewCell, index: Int) {
-        var cantidadResult = Lista[index].cantidad
+        var cantidadResult = listaPorComprar[index].cantidad
         cantidadResult = cantidadResult - 1
-        Lista[index].cantidad = cantidadResult
+        listaPorComprar[index].cantidad = cantidadResult
         if(cantidadResult == 0){
-            Lista.remove(at: index)
+            listaPorComprar.remove(at: index)
         }
         let valor = calcularTotal()
         pagarTotalLabel.text =  "S/. \(String(valor))"
@@ -101,11 +106,10 @@ extension CompraViewController: CustomComprarTableViewCellDelegate{
     }
     func calcularTotal() -> Double{
         var totalPagar:Double = 0.00
-        Lista.forEach { e in
+        listaPorComprar.forEach { e in
             let Monto = Double(e.cantidad) * e.precio
             totalPagar = totalPagar + Monto
         }
-        //let valor = totalPagar.redondear(numeroDeDecimales: 3)
         return totalPagar
     }
 }

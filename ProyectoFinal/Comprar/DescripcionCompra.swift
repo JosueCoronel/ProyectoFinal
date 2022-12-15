@@ -14,3 +14,9 @@ struct DescripcionCompra{
     let imagen: String
     var cantidad: Int
 }
+
+struct DescripcionCupones{
+    let codigoCupon:String
+    let porcentDescuento: Double
+    let imagenCupon: String
+}
