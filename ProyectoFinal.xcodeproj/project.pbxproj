@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0692042947727400E70DF2 /* ReciboPagadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0692032947727400E70DF2 /* ReciboPagadoViewController.swift */; };
+		2F14069B2941C6A700CF2F4F /* PagarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14069A2941C6A700CF2F4F /* PagarViewController.swift */; };
+		2F14069E2941DF5600CF2F4F /* CustomFavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14069D2941DF5600CF2F4F /* CustomFavoritoTableViewCell.swift */; };
+		2F1406A02941E03300CF2F4F /* CustomInicioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14069F2941E03300CF2F4F /* CustomInicioTableViewCell.swift */; };
+		2F1406A22941FB3200CF2F4F /* ContenedorTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1406A12941FB3200CF2F4F /* ContenedorTabBarController.swift */; };
 		2F16614E2935E0B30024B4AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F16614D2935E0B30024B4AB /* AppDelegate.swift */; };
 		2F1661502935E0B30024B4AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F16614F2935E0B30024B4AB /* SceneDelegate.swift */; };
 		2F1661522935E0B30024B4AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1661512935E0B30024B4AB /* ViewController.swift */; };
 		2F1661552935E0B30024B4AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1661532935E0B30024B4AB /* Main.storyboard */; };
 		2F1661572935E0B40024B4AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1661562935E0B40024B4AB /* Assets.xcassets */; };
 		2F16615A2935E0B40024B4AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1661582935E0B40024B4AB /* LaunchScreen.storyboard */; };
+		2F2E11CC294B958500A83391 /* MisProductosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E11CB294B958500A83391 /* MisProductosViewController.swift */; };
+		2F583BF329473E72000F9BE0 /* CustomPagarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F583BF229473E72000F9BE0 /* CustomPagarTableViewCell.swift */; };
+		2FB7DB97293FBA8800DCBBA2 /* CompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7DB96293FBA8800DCBBA2 /* CompraViewController.swift */; };
+		2FB7DB99293FBAA000DCBBA2 /* FavoritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7DB98293FBAA000DCBBA2 /* FavoritoViewController.swift */; };
+		2FB7DB9B293FBAAD00DCBBA2 /* ConfiguracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7DB9A293FBAAD00DCBBA2 /* ConfiguracionViewController.swift */; };
+		2FB7DB9F293FC00C00DCBBA2 /* CustomComprarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7DB9E293FC00C00DCBBA2 /* CustomComprarTableViewCell.swift */; };
+		2FB7DBA1293FC28D00DCBBA2 /* DescripcionCompra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7DBA0293FC28D00DCBBA2 /* DescripcionCompra.swift */; };
 		2FCFD195293F857A00B0BFE2 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD194293F857A00B0BFE2 /* InicioViewController.swift */; };
 		2FCFD197293F85EB00B0BFE2 /* Descripcion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD196293F85EB00B0BFE2 /* Descripcion.swift */; };
-		2FCFD199293F8C6500B0BFE2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD198293F8C6500B0BFE2 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F0692032947727400E70DF2 /* ReciboPagadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciboPagadoViewController.swift; sourceTree = "<group>"; };
+		2F14069A2941C6A700CF2F4F /* PagarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagarViewController.swift; sourceTree = "<group>"; };
+		2F14069D2941DF5600CF2F4F /* CustomFavoritoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFavoritoTableViewCell.swift; sourceTree = "<group>"; };
+		2F14069F2941E03300CF2F4F /* CustomInicioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInicioTableViewCell.swift; sourceTree = "<group>"; };
+		2F1406A12941FB3200CF2F4F /* ContenedorTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenedorTabBarController.swift; sourceTree = "<group>"; };
 		2F16614A2935E0B30024B4AB /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F16614D2935E0B30024B4AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F16614F2935E0B30024B4AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,9 +43,15 @@
 		2F1661562935E0B40024B4AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F1661592935E0B40024B4AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F16615B2935E0B40024B4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F2E11CB294B958500A83391 /* MisProductosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisProductosViewController.swift; sourceTree = "<group>"; };
+		2F583BF229473E72000F9BE0 /* CustomPagarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPagarTableViewCell.swift; sourceTree = "<group>"; };
+		2FB7DB96293FBA8800DCBBA2 /* CompraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraViewController.swift; sourceTree = "<group>"; };
+		2FB7DB98293FBAA000DCBBA2 /* FavoritoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritoViewController.swift; sourceTree = "<group>"; };
+		2FB7DB9A293FBAAD00DCBBA2 /* ConfiguracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracionViewController.swift; sourceTree = "<group>"; };
+		2FB7DB9E293FC00C00DCBBA2 /* CustomComprarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComprarTableViewCell.swift; sourceTree = "<group>"; };
+		2FB7DBA0293FC28D00DCBBA2 /* DescripcionCompra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescripcionCompra.swift; sourceTree = "<group>"; };
 		2FCFD194293F857A00B0BFE2 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		2FCFD196293F85EB00B0BFE2 /* Descripcion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descripcion.swift; sourceTree = "<group>"; };
-		2FCFD198293F8C6500B0BFE2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F14069C2941DF1D00CF2F4F /* Favorito */ = {
+			isa = PBXGroup;
+			children = (
+				2FB7DB98293FBAA000DCBBA2 /* FavoritoViewController.swift */,
+				2F14069D2941DF5600CF2F4F /* CustomFavoritoTableViewCell.swift */,
+			);
+			path = Favorito;
+			sourceTree = "<group>";
+		};
 		2F1661412935E0B30024B4AB = {
 			isa = PBXGroup;
 			children = (
@@ -69,11 +100,37 @@
 				2F1661562935E0B40024B4AB /* Assets.xcassets */,
 				2F1661582935E0B40024B4AB /* LaunchScreen.storyboard */,
 				2F16615B2935E0B40024B4AB /* Info.plist */,
-				2FCFD194293F857A00B0BFE2 /* InicioViewController.swift */,
-				2FCFD198293F8C6500B0BFE2 /* CustomTableViewCell.swift */,
-				2FCFD196293F85EB00B0BFE2 /* Descripcion.swift */,
+				2FB7DB9D293FBFD600DCBBA2 /* Inicio */,
+				2FB7DB9C293FBFAD00DCBBA2 /* Comprar */,
+				2F14069C2941DF1D00CF2F4F /* Favorito */,
+				2FB7DB9A293FBAAD00DCBBA2 /* ConfiguracionViewController.swift */,
+				2F1406A12941FB3200CF2F4F /* ContenedorTabBarController.swift */,
 			);
 			path = ProyectoFinal;
+			sourceTree = "<group>";
+		};
+		2FB7DB9C293FBFAD00DCBBA2 /* Comprar */ = {
+			isa = PBXGroup;
+			children = (
+				2FB7DB96293FBA8800DCBBA2 /* CompraViewController.swift */,
+				2FB7DB9E293FC00C00DCBBA2 /* CustomComprarTableViewCell.swift */,
+				2FB7DBA0293FC28D00DCBBA2 /* DescripcionCompra.swift */,
+				2F14069A2941C6A700CF2F4F /* PagarViewController.swift */,
+				2F583BF229473E72000F9BE0 /* CustomPagarTableViewCell.swift */,
+				2F0692032947727400E70DF2 /* ReciboPagadoViewController.swift */,
+				2F2E11CB294B958500A83391 /* MisProductosViewController.swift */,
+			);
+			path = Comprar;
+			sourceTree = "<group>";
+		};
+		2FB7DB9D293FBFD600DCBBA2 /* Inicio */ = {
+			isa = PBXGroup;
+			children = (
+				2FCFD194293F857A00B0BFE2 /* InicioViewController.swift */,
+				2FCFD196293F85EB00B0BFE2 /* Descripcion.swift */,
+				2F14069F2941E03300CF2F4F /* CustomInicioTableViewCell.swift */,
+			);
+			path = Inicio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,11 +204,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FCFD199293F8C6500B0BFE2 /* CustomTableViewCell.swift in Sources */,
+				2FB7DB99293FBAA000DCBBA2 /* FavoritoViewController.swift in Sources */,
+				2F14069B2941C6A700CF2F4F /* PagarViewController.swift in Sources */,
+				2F1406A22941FB3200CF2F4F /* ContenedorTabBarController.swift in Sources */,
+				2FB7DB97293FBA8800DCBBA2 /* CompraViewController.swift in Sources */,
+				2F0692042947727400E70DF2 /* ReciboPagadoViewController.swift in Sources */,
+				2FB7DBA1293FC28D00DCBBA2 /* DescripcionCompra.swift in Sources */,
+				2F583BF329473E72000F9BE0 /* CustomPagarTableViewCell.swift in Sources */,
+				2F1406A02941E03300CF2F4F /* CustomInicioTableViewCell.swift in Sources */,
 				2F1661522935E0B30024B4AB /* ViewController.swift in Sources */,
+				2F2E11CC294B958500A83391 /* MisProductosViewController.swift in Sources */,
 				2F16614E2935E0B30024B4AB /* AppDelegate.swift in Sources */,
 				2F1661502935E0B30024B4AB /* SceneDelegate.swift in Sources */,
+				2FB7DB9B293FBAAD00DCBBA2 /* ConfiguracionViewController.swift in Sources */,
 				2FCFD197293F85EB00B0BFE2 /* Descripcion.swift in Sources */,
+				2F14069E2941DF5600CF2F4F /* CustomFavoritoTableViewCell.swift in Sources */,
+				2FB7DB9F293FC00C00DCBBA2 /* CustomComprarTableViewCell.swift in Sources */,
 				2FCFD195293F857A00B0BFE2 /* InicioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
