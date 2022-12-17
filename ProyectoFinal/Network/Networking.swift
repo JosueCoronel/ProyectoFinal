@@ -8,28 +8,13 @@
 import Foundation
 
 protocol RemoteRespository {
-    func fetchPets() -> [PetResponse]
-    func fetchTrendingPets() -> [PetResponse]
+    func fetchData() -> [DataResponse]
 }
 
-class PetSocialAPI: RemoteRespository {
-    func fetchPets() -> [PetResponse] {
-        return []
-    }
-    
-    func fetchTrendingPets() -> [PetResponse] {
-        return []
-    }
-}
-
-class PetsMocksAPI: RemoteRespository {
-    func fetchPets() -> [PetResponse] {
-        return []
-    }
-    
-    func fetchTrendingPets() -> [PetResponse] {
+class DataMoksInicio: RemoteRespository {
+    func fetchData() -> [DataResponse] {
         
-        let resource = "pets_success"
+        let resource = "dataInicio"
         if let url = Bundle.main.url(forResource: resource, withExtension: "json") {
             
             do {
@@ -37,7 +22,7 @@ class PetsMocksAPI: RemoteRespository {
                 
                 // API real
                 let decoder = JSONDecoder()
-                let result = try decoder.decode([PetResponse].self, from: data)
+                let result = try decoder.decode([DataResponse].self, from: data)
                 return result
             } catch let error {
                 print(error.localizedDescription)
@@ -47,68 +32,4 @@ class PetsMocksAPI: RemoteRespository {
         
         return []
     }
-    
-    
 }
-
-protocol ExternalAPI {
-    
-}
-
-class FirebaseAPI : ExternalAPI {
-    
-}
-
-class CompetenciaFirebaseAPI : ExternalAPI {
-    
-}
-
-class MiPropioAPI : ExternalAPI {
-    
-}
-
-protocol DataBase {
-    func getData()
-    func saveData(_ data: String)
-    func updateData(_ value: String)
-    func deleteData(_ value: String)
-}
-
-class UserDefaultDataBase : DataBase {
-    func getData() {
-        
-    }
-    
-    func saveData(_ data: String) {
-        
-    }
-    
-    func updateData(_ value: String) {
-        
-    }
-    
-    func deleteData(_ value: String) {
-        
-    }
-}
-
-class CoreDataDataBase: DataBase {
-    func getData() {
-        
-    }
-    
-    func saveData(_ data: String) {
-        
-    }
-    
-    func updateData(_ value: String) {
-        
-    }
-    
-    func deleteData(_ value: String) {
-        
-    }
-    
-    
-}
-

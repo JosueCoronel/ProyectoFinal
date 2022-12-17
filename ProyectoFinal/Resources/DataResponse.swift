@@ -1,5 +1,5 @@
 //
-//  InicioEntity.swift
+//  PetResponse.swift
 //  ProyectoFinal
 //
 //  Created by Maximo Josue Coronel Flores on 17/12/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Descripcion{
+struct DataResponse : Decodable {
     let codigo: String
     let titulo: String
     let subTitulo: String
@@ -15,4 +15,3 @@ struct Descripcion{
     let precio: Float
     let imagen: String
 }
-

@@ -12,23 +12,13 @@ class InicioConfigurator {
         
         let presenter = InicioPresenter()
         
-        let api = PetsMocksAPI()
+        let api = DataMoksInicio()
         let interactor = InicioInteractor(presenter: presenter, api: api)
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let view = storyboard.instantiateViewController(withIdentifier: "InicioViewController") as! InicioViewController
-        
-        let viewComprar = storyboard.instantiateViewController(withIdentifier: "CarritoViewController") as! CarritoViewController
-        
-        
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [
-            view,
-            viewComprar
-        ]
-        
-        
+       
         let router = InicioRouter()
         router.presenter = presenter
         router.view = view
@@ -39,7 +29,7 @@ class InicioConfigurator {
         
         view.presenter = presenter
         
-        return tabBarController
+        return view
         
     }
     

@@ -7,6 +7,7 @@
 import Foundation
 
 protocol InicioViewProtocol {
+    func showData(_ dataInicio: [Descripcion])
 }
 
 protocol InicioInteractorProtocol {

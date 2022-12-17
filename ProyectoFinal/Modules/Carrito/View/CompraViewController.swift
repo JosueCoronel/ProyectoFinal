@@ -58,6 +58,11 @@ class CarritoViewController: UIViewController{
     }
 }
 
+extension CarritoViewController: CarritoViewProtocol {
+    
+}
+
+
 extension CarritoViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listaPorComprar.count

@@ -12,6 +12,7 @@ class InicioViewController: UIViewController{
     
     var presenter: InicioPresenterProtocol?
     
+    private var dataInicio: [Descripcion]?
     var listaInicio:[Descripcion] = []
     
     var listaFavorito:[Descripcion] = []
@@ -38,6 +39,11 @@ class InicioViewController: UIViewController{
 }
 
 extension InicioViewController: InicioViewProtocol {
+    func showData(_ dataInicio: [Descripcion]) {
+        self.dataInicio = dataInicio
+        tableView.reloadData()
+    }
+    
     
 }
 

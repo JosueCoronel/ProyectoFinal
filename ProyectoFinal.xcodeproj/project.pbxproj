@@ -29,8 +29,12 @@
 		2F13DF2A294DAC4500AEC248 /* CarritoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13DF29294DAC4500AEC248 /* CarritoProtocols.swift */; };
 		2F13DF30294DAFA700AEC248 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13DF2F294DAFA700AEC248 /* AppBuilder.swift */; };
 		2F13DF37294DBEAB00AEC248 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13DF36294DBEAB00AEC248 /* Networking.swift */; };
-		2F13DF39294DC19900AEC248 /* PetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13DF38294DC19900AEC248 /* PetResponse.swift */; };
+		2F13DF39294DC19900AEC248 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13DF38294DC19900AEC248 /* DataResponse.swift */; };
 		2F13DF3B294DD50F00AEC248 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13DF3A294DD50F00AEC248 /* Configurator.swift */; };
+		2F13DF3E294DDD4800AEC248 /* dataInicio.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F13DF3D294DDD4800AEC248 /* dataInicio.json */; };
+		2F13DF40294DE15C00AEC248 /* dataCupones.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F13DF3F294DE15C00AEC248 /* dataCupones.json */; };
+		2F13DF42294DE1D700AEC248 /* dataLocal.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F13DF41294DE1D700AEC248 /* dataLocal.json */; };
+		2F13DF44294DE21000AEC248 /* dataRecibos.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F13DF43294DE21000AEC248 /* dataRecibos.json */; };
 		2F14069B2941C6A700CF2F4F /* PagarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14069A2941C6A700CF2F4F /* PagarViewController.swift */; };
 		2F1406A02941E03300CF2F4F /* CustomInicioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14069F2941E03300CF2F4F /* CustomInicioTableViewCell.swift */; };
 		2F1406A22941FB3200CF2F4F /* ContenedorTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1406A12941FB3200CF2F4F /* ContenedorTabBarController.swift */; };
@@ -69,8 +73,12 @@
 		2F13DF29294DAC4500AEC248 /* CarritoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoProtocols.swift; sourceTree = "<group>"; };
 		2F13DF2F294DAFA700AEC248 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
 		2F13DF36294DBEAB00AEC248 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		2F13DF38294DC19900AEC248 /* PetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetResponse.swift; sourceTree = "<group>"; };
+		2F13DF38294DC19900AEC248 /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
 		2F13DF3A294DD50F00AEC248 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		2F13DF3D294DDD4800AEC248 /* dataInicio.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataInicio.json; sourceTree = "<group>"; };
+		2F13DF3F294DE15C00AEC248 /* dataCupones.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataCupones.json; sourceTree = "<group>"; };
+		2F13DF41294DE1D700AEC248 /* dataLocal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataLocal.json; sourceTree = "<group>"; };
+		2F13DF43294DE21000AEC248 /* dataRecibos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataRecibos.json; sourceTree = "<group>"; };
 		2F14069A2941C6A700CF2F4F /* PagarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagarViewController.swift; sourceTree = "<group>"; };
 		2F14069F2941E03300CF2F4F /* CustomInicioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInicioTableViewCell.swift; sourceTree = "<group>"; };
 		2F1406A12941FB3200CF2F4F /* ContenedorTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenedorTabBarController.swift; sourceTree = "<group>"; };
@@ -110,7 +118,11 @@
 		2F103619294DA467001113B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2F13DF38294DC19900AEC248 /* PetResponse.swift */,
+				2F13DF38294DC19900AEC248 /* DataResponse.swift */,
+				2F13DF3D294DDD4800AEC248 /* dataInicio.json */,
+				2F13DF41294DE1D700AEC248 /* dataLocal.json */,
+				2F13DF3F294DE15C00AEC248 /* dataCupones.json */,
+				2F13DF43294DE21000AEC248 /* dataRecibos.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -297,9 +309,9 @@
 		2F13DF1B294DABD800AEC248 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2F13DF3C294DDB1300AEC248 /* Otros */,
 				2FB7DB96293FBA8800DCBBA2 /* CompraViewController.swift */,
 				2FB7DB9E293FC00C00DCBBA2 /* CustomComprarTableViewCell.swift */,
+				2F13DF3C294DDB1300AEC248 /* Otros */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -442,9 +454,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F13DF44294DE21000AEC248 /* dataRecibos.json in Resources */,
+				2F13DF40294DE15C00AEC248 /* dataCupones.json in Resources */,
 				2F16615A2935E0B40024B4AB /* LaunchScreen.storyboard in Resources */,
 				2F1661572935E0B40024B4AB /* Assets.xcassets in Resources */,
+				2F13DF42294DE1D700AEC248 /* dataLocal.json in Resources */,
 				2F1661552935E0B30024B4AB /* Main.storyboard in Resources */,
+				2F13DF3E294DDD4800AEC248 /* dataInicio.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +492,7 @@
 				2F13DF2A294DAC4500AEC248 /* CarritoProtocols.swift in Sources */,
 				2F13DEFE294DA98800AEC248 /* HomeRouter.swift in Sources */,
 				2F1406A02941E03300CF2F4F /* CustomInicioTableViewCell.swift in Sources */,
-				2F13DF39294DC19900AEC248 /* PetResponse.swift in Sources */,
+				2F13DF39294DC19900AEC248 /* DataResponse.swift in Sources */,
 				2F2E11CC294B958500A83391 /* MisProductosViewController.swift in Sources */,
 				2F16614E2935E0B30024B4AB /* AppDelegate.swift in Sources */,
 				2F13DF22294DAC1B00AEC248 /* CarritoRouter.swift in Sources */,

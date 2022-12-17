@@ -12,22 +12,12 @@ class CarritoConfigurator {
         
         let presenter = CarritoPresenter()
         
-        let api = PetsMocksAPI()
+        let api = DataMoksInicio()
         let interactor = CarritoInteractor(presenter: presenter, api: api)
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let view = storyboard.instantiateViewController(withIdentifier: "InicioViewController") as! InicioViewController
-        
-        let viewComprar = storyboard.instantiateViewController(withIdentifier: "CarritoViewController") as! CarritoViewController
-        
-        
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [
-            view,
-            viewComprar
-        ]
-        
+        let view = storyboard.instantiateViewController(withIdentifier: "CarritoViewController") as! CarritoViewController
         
         let router = CarritoRouter()
         router.presenter = presenter
@@ -35,11 +25,11 @@ class CarritoConfigurator {
         
         presenter.router = router
         presenter.interactor = interactor
-        //presenter.view = view
+        presenter.view = view
         
-        //view.presenter = presenter
+        view.presenter = presenter
         
-        return tabBarController
+        return view
         
     }
     
