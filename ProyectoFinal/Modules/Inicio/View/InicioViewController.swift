@@ -9,6 +9,9 @@ import UIKit
 
 class InicioViewController: UIViewController{
     
+    
+    var presenter: InicioPresenterProtocol?
+    
     var listaInicio:[Descripcion] = []
     
     var listaFavorito:[Descripcion] = []
@@ -22,9 +25,9 @@ class InicioViewController: UIViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let tabbar = tabBarController as! ContenedorTabBarController
-        listaCarrito = tabbar.listaCarrito
-        listaInicio = tabbar.listaInicio
+        //let tabbar = tabBarController as! ContenedorTabBarController
+        //listaCarrito = tabbar.listaCarrito
+        //listaInicio = tabbar.listaInicio
         tableView.reloadData()
     }
     
@@ -32,6 +35,10 @@ class InicioViewController: UIViewController{
         super.viewDidLoad()
         tableView.dataSource = self
     }
+}
+
+extension InicioViewController: InicioViewProtocol {
+    
 }
 
 extension InicioViewController: UITableViewDataSource {

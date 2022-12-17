@@ -1,0 +1,41 @@
+//
+//  ListaTransaccionesBuilder.swift
+//  ProyectoFinal
+//
+//  Created by Maximo Josue Coronel Flores on 17/12/22.
+//
+
+import Foundation
+import UIKit
+
+class ListaTransaccionesBuilder {
+    static func build() -> UIViewController {
+        /*
+        let presenter = ListaTransaccionesPresenter()
+        
+        let api = FirebaseAPI()
+        let interactor = ListaTransaccionesInteractor(presenter: presenter, api: api)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        let view = storyboard.instantiateViewController(withIdentifier: "ListaTransaccionesViewController") as! ListaTransaccionesViewController
+        
+        // TODO: pregunta donde va esto xd
+        view.title = "Home"
+        
+        let router = ListaTransaccionesRouter()
+        router.presenter = presenter
+        router.view = view
+        
+        presenter.router = router
+        presenter.interactor = interactor
+        presenter.view = view
+        
+        view.presenter = presenter
+        
+        return view
+         */
+        return InicioViewController()
+    }
+}
+
