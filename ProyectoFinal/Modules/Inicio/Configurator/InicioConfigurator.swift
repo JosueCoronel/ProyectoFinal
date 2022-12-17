@@ -19,7 +19,7 @@ class InicioConfigurator {
         
         let view = storyboard.instantiateViewController(withIdentifier: "InicioViewController") as! InicioViewController
         
-        let viewComprar = storyboard.instantiateViewController(withIdentifier: "CompraViewController") as! CompraViewController
+        let viewComprar = storyboard.instantiateViewController(withIdentifier: "CarritoViewController") as! CarritoViewController
         
         
         let tabBarController = UITabBarController()

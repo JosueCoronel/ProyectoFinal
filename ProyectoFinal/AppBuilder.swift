@@ -10,19 +10,7 @@ import UIKit
 
 class AppBuilder {
     static func build() -> UIViewController {
-        let tabBarController = UITabBarController()
-        
         let homeViewController = HomeConfigurator.make()
-        
-        //let homeViewController = ListaTransaccionesBuilder.build()
-        //let categoriesViewController = ListaCategoriasBuilder.build()
-        //let presupuestosViewController = ListaPresupuestosBuilder.build()
-        
-//        tabBarController.setViewControllers([
-//            homeViewController,
-//            //categoriesViewController,
-//            //presupuestosViewController
-//        ], animated: true)
         return homeViewController
     }
 }

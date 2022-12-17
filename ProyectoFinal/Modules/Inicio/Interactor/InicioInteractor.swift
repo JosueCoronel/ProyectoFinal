@@ -17,13 +17,4 @@ class InicioInteractor: InicioInteractorProtocol {
         self.presenter = presenter
         self.api = api
     }
-    /*
-    func favoritos() {
-        print("Hola desde interactor")
-        if let pets = api?.fetchTrendingPets() {
-            let myPets = PetEntity.make(pets)
-            presenter.mostrar(myPets)
-        }
-    }
-     */
 }

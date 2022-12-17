@@ -7,7 +7,12 @@
 
 import UIKit
 
-class CompraViewController: UIViewController{
+class CarritoViewController: UIViewController{
+    
+    
+    var presenter: CarritoPresenterProtocol?
+    
+    
     var listaPorComprar:[DescripcionCompra] = []
     var subTotalLabel:Double = 0.00
     
@@ -26,15 +31,15 @@ class CompraViewController: UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         pagarTotalLabel.text = "S/. \(subTotalLabel)"
-        let tabbar = tabBarController as! ContenedorTabBarController
-        listaPorComprar = tabbar.listaCarrito
+        //let tabbar = tabBarController as! ContenedorTabBarController
+        //listaPorComprar = tabbar.listaCarrito
         tableView.reloadData()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         
-        let tabbar = tabBarController as! ContenedorTabBarController
-        tabbar.listaCarrito = listaPorComprar
+        //let tabbar = tabBarController as! ContenedorTabBarController
+        //tabbar.listaCarrito = listaPorComprar
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -53,7 +58,7 @@ class CompraViewController: UIViewController{
     }
 }
 
-extension CompraViewController:UITableViewDataSource{
+extension CarritoViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listaPorComprar.count
     }
@@ -79,7 +84,7 @@ extension CompraViewController:UITableViewDataSource{
     }
 }
 
-extension CompraViewController: CustomComprarTableViewCellDelegate{
+extension CarritoViewController: CustomComprarTableViewCellDelegate{
     func agregarProducto(cell: CustomComprarTableViewCell,index: Int) {
         var cantidadResult = listaPorComprar[index].cantidad
         cantidadResult = cantidadResult + 1

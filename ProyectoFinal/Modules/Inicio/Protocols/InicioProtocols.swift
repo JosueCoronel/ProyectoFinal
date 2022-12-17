@@ -7,17 +7,18 @@
 import Foundation
 
 protocol InicioViewProtocol {
-//    func mostrar(_ numero: Int)
-//    func showPets(_ pets: [PetEntity])
 }
 
 protocol InicioInteractorProtocol {
-//    func favoritos()
 }
 
 protocol InicioRouterProtocol {
-//    func presentaAlerta()
-//    func mostrar(_ pet: PetEntity)
-//    func presetPetDetail(_ pet: PetEntity)
 }
+
+protocol CustomInicioTableViewCellDelegate:AnyObject {
+    func agregarCarrito(cell: CustomInicioTableViewCell, index: Int)
+    
+    func agregarFavorito(cell:CustomInicioTableViewCell, index: Int)
+}
+
 

@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct Descripcion{
+    let codigo: String
+    let titulo: String
+    let subTitulo: String
+    let descripcion: String
+    let precio: Float
+    let imagen: String
+}

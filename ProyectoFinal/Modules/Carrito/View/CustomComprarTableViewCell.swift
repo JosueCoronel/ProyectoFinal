@@ -7,12 +7,6 @@
 
 import UIKit
 
-protocol CustomComprarTableViewCellDelegate:AnyObject {
-    func eliminarProducto(cell: CustomComprarTableViewCell, index: Int)
-    
-    func agregarProducto(cell:CustomComprarTableViewCell, index: Int)
-}
-
 class CustomComprarTableViewCell: UITableViewCell {
 
     @IBOutlet weak var tituloLabel: UILabel!

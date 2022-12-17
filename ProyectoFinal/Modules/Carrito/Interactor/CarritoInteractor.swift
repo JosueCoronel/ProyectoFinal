@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+
+class CarritoInteractor: CarritoInteractorProtocol {
+    var presenter: CarritoPresenterProtocol
+    
+    var api: RemoteRespository?
+    
+    required init(presenter: CarritoPresenterProtocol, api: RemoteRespository) {
+        self.presenter = presenter
+        self.api = api
+    }
+}
+

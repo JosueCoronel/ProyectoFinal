@@ -7,11 +7,6 @@
 
 import UIKit
 
-protocol CustomInicioTableViewCellDelegate:AnyObject {
-    func agregarCarrito(cell: CustomInicioTableViewCell, index: Int)
-    
-    func agregarFavorito(cell:CustomInicioTableViewCell, index: Int)
-}
 
 class CustomInicioTableViewCell: UITableViewCell {
 

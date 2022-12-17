@@ -20,8 +20,8 @@ class InicioViewController: UIViewController{
     @IBOutlet weak var tableView: UITableView!
 
     override func viewWillDisappear(_ animated: Bool) {
-        let tabbar = tabBarController as! ContenedorTabBarController
-        tabbar.listaCarrito = listaCarrito
+        //let tabbar = tabBarController as! ContenedorTabBarController
+        //tabbar.listaCarrito = listaCarrito
     }
     
     override func viewDidAppear(_ animated: Bool) {

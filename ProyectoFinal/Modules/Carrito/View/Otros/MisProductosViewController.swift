@@ -18,8 +18,6 @@ class MisProductosViewController: UIViewController {
         tableView?.dataSource = self
         tableView?.reloadData()
     }
-    
-
 }
 
 extension MisProductosViewController:UITableViewDataSource{

@@ -24,6 +24,4 @@ class HomeConfigurator {
         
         return view
     }
-    // ahora la cosa es llamar a este configurator
-    // donde deberia llamarse o en que momento 
 }

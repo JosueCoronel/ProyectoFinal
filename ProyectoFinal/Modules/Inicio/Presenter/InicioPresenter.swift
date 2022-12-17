@@ -19,35 +19,3 @@ extension InicioPresenter: InicioPresenterProtocol {
     
 }
 
-/*
-extension InicioPresenter: ListaPresenterOutputProtocol {
-    
-    func mostrarPet(_ pet: [PetEntity]) {
-//        router?.mostrar(pet)
-        view?.showPets(pet)
-    }
-
-    func opcionSeleccionada(_ index: Int) {
-        interactor?.favoritos()
-    }
-}
-
-extension InicioPresenter: InicioPresenterInputProtocol {
-    
-    func showPetSelected(_ pet: PetEntity) {
-        router?.presetPetDetail(pet)
-    }
-
-    func getData() {
-        /// se hizo muchas cosas
-        ///
-        print("called: getData() presenter")
-        view?.mostrar(4)
-        
-    }
-    func presentErrorView() {
-        print("called: presentErrorView presenter")
-        router?.presentaAlerta()
-    }
-}
-*/

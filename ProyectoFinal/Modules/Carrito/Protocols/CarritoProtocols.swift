@@ -7,4 +7,17 @@
 
 import Foundation
 
+protocol CarritoViewProtocol {
+}
 
+protocol CarritoInteractorProtocol {
+}
+
+protocol CarritoRouterProtocol {
+}
+
+protocol CustomComprarTableViewCellDelegate:AnyObject {
+    func eliminarProducto(cell: CustomComprarTableViewCell, index: Int)
+    
+    func agregarProducto(cell:CustomComprarTableViewCell, index: Int)
+}

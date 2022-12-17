@@ -13,7 +13,8 @@ class HomeRouter {
 
 extension HomeRouter: HomeRouterProtocol {
     func mostrarOtraVista() {
-        let InicioConfigurator = InicioConfigurator.build()
+        let InicioConfigurator = Configurator.build()
+        //let InicioConfigurator = ContenedorTabBarController()
         view?.navigationController?.pushViewController(InicioConfigurator, animated: true)
     }
 }
