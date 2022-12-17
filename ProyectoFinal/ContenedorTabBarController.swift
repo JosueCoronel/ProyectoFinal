@@ -44,7 +44,6 @@ class ContenedorTabBarController: UITabBarController {
         )
     ]
     
-    var listaFavorito:[Descripcion] = []
     var listaCarrito:[DescripcionCompra] = []
     
     var listaCupones = [

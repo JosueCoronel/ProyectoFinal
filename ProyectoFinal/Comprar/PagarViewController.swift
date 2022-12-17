@@ -71,7 +71,9 @@ class PagarViewController: UIViewController {
         detalleViewController.modalPresentationStyle = .fullScreen
         detalleViewController.numeroRecibo = nuevoRecibo
         present(detalleViewController, animated: true)
-
+        
+        listaRec.listaRecibo = listaRecibo
+        print(listaRecibo)
     }
     
     @IBAction func metodoPagoSegmentedControl(_ sender: UISegmentedControl) {
